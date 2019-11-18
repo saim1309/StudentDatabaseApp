@@ -1,0 +1,245 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp">
+
+    <!--  1st Child Layout contains ID  (Nested In Parent Layout) with Horizontal Orientation -->
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtId"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="ID" />
+
+        <EditText
+            android:id="@+id/etId"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </LinearLayout>
+
+    <!--  2nd Child Layout contains First Name  (Nested In Parent Layout) with Horizontal Orientation -->
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtFname"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="First Name" />
+
+        <EditText
+            android:id="@+id/etFname"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </LinearLayout>
+
+    <!--  3rd Child Layout contains Last Name (Nested In Parent Layout) with Horizontal Orientation -->
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtLname"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="Last Name" />
+
+        <EditText
+            android:id="@+id/etLname"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </LinearLayout>
+
+    <!--  4th Child Layout contains Marks  (Nested In Parent Layout) with Horizontal Orientation -->
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtMarks"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="Marks" />
+
+        <EditText
+            android:id="@+id/etMarks"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </LinearLayout>
+
+
+    <!--  5th Child Layout contains Course  (Nested In Parent Layout) with Horizontal Orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/txtCourse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            android:text="Course"
+            android:textAppearance="?android:textAppearanceMedium" />
+        <ListView
+            android:id="@+id/listCourse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+    </LinearLayout>
+
+
+
+    <!--  6th Child Layout contains Credit  (Nested In Parent Layout) with Horizontal Orientation -->
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtCredits"
+            android:layout_gravity="center_vertical"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="Credits" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroupCredits"
+            android:layout_weight="6"
+            android:orientation="horizontal">
+
+            <RadioButton android:id="@+id/radioTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="2" />
+            <RadioButton android:id="@+id/radioThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="3" />
+            <RadioButton android:id="@+id/radioFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="4" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ADD" />
+        <Button
+            android:id="@+id/btnView"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="VIEW DATA " />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="DELETE" />
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="UPDATE" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnSearchId"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Search By ID" />
+        <Button
+            android:id="@+id/btnSearchCourse"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Search by Course" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
